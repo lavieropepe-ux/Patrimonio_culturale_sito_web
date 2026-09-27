@@ -3,22 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benvenuto nel sito web del patrimonio culturale</title>
+    <!-- 1. Titolo che appare nella scheda del browser -->
+    <title>Il Mio Nuovo Titolo</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex items-center justify-center p-6">
-    <main class="w-full max-w-3xl text-center space-y-8">
+<body class="relative min-h-screen bg-cover bg-center bg-no-repeat font-sans text-slate-100 flex items-center justify-center p-6"
+      style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1920&auto=format&fit=crop');">
+
+    <!-- Layer scuro sopra lo sfondo per rendere il testo sempre ben visibile -->
+    <div class="absolute inset-0 bg-slate-950/70 backdrop-blur-sm"></div>
+
+    <!-- Contenuto Principale -->
+    <main class="relative z-10 w-full max-w-3xl text-center space-y-8 bg-slate-900/60 p-8 sm:p-12 rounded-3xl border border-slate-700/50 shadow-2xl backdrop-blur-md">
+        
+        <!-- 2. Titolo principale della pagina -->
         <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
-            Benvenuto nel sito web del patrimonio culturale!!
+            Il Mio Nuovo Titolo
         </h1>
-        <p class="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
+
+        <p class="text-slate-300 text-lg max-w-2xl mx-auto leading-relaxed">
             Questa pagina è stata creata per essere ospitata gratuitamente su GitHub Pages. Personalizza questo contenuto e condividi il tuo progetto con il mondo!
         </p>
-        <div class="relative max-w-2xl mx-auto rounded-2xl overflow-hidden shadow-2xl border border-slate-800">
+
+        <div class="relative max-w-2xl mx-auto rounded-2xl overflow-hidden shadow-2xl border border-slate-700/60">
             <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop" alt="Immagine Principale" class="w-full h-64 sm:h-80 object-cover">
         </div>
+
         <div class="pt-4">
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-3 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition text-base">
                 <span>Esplora il Progetto</span>
