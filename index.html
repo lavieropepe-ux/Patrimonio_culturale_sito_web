@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 1. Titolo che appare nella scheda del browser -->
     <title>Sito Patrimonio Culturale</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -16,40 +15,68 @@
     <!-- Layer scuro sopra lo sfondo -->
     <div class="absolute inset-0 bg-slate-950/70 backdrop-blur-sm"></div>
 
-    <!-- Contenuto Principale: espanso a max-w-5xl -->
-    <main class="relative z-10 w-full max-w-5xl space-y-8 bg-slate-900/60 p-8 sm:p-12 rounded-3xl border border-slate-700/50 shadow-2xl backdrop-blur-md">
+    <!-- Contenuto Principale: espanso per ospitare più schede -->
+    <main class="relative z-10 w-full max-w-6xl space-y-10 my-8">
         
         <!-- Titolo principale -->
-        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight text-center">
+        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight text-center drop-shadow-md">
             Cultural Heritage website
         </h1>
 
-        <!-- Sezione Griglia: Immagine a sinistra, Testo e Pulsante a destra -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center pt-2">
+        <!-- Griglia delle Schede dei Monumenti -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
             
-            <!-- Immagine SanLeucio.jpg -->
-            <div class="relative w-full rounded-2xl overflow-hidden shadow-2xl border border-slate-700/60">
-                <img src="SanLeucio.jpg" alt="San Leucio" class="w-full h-72 sm:h-96 object-cover">
-            </div>
+            <!-- SCHEDA 1: Belvedere di San Leucio -->
+            <article class="bg-slate-900/60 p-6 sm:p-8 rounded-3xl border border-slate-700/50 shadow-2xl backdrop-blur-md flex flex-col justify-between space-y-6">
+                <div class="space-y-6">
+                    <!-- Immagine 1 -->
+                    <div class="relative w-full rounded-2xl overflow-hidden shadow-xl border border-slate-700/60">
+                        <img src="SanLeucio.jpg" alt="Belvedere di San Leucio" class="w-full h-64 object-cover">
+                    </div>
 
-            <!-- Testo e Pulsante affiancati -->
-            <div class="text-left space-y-6 flex flex-col justify-center">
-                <p class="text-slate-200 text-lg sm:text-xl leading-relaxed">
-                    Il Complesso Monumentale del Belvedere di San Leucio è un sito storico borbonico nato dal sogno utopico di re Ferdinando IV di Borbone, che vi fondò una comunità manifatturiera tessile all'avanguardia dotata di un proprio codice di leggi.
-                </p>
-                <p class="text-slate-400 text-base leading-relaxed">
-                    Questo portale offre una panoramica sulla storia, l'architettura e la conservazione del patrimonio culturale del sito.
-                </p>
+                    <!-- Titolo e Descrizione 1 -->
+                    <div class="space-y-3 text-left">
+                        <h2 class="text-2xl font-bold text-white">Belvedere di San Leucio</h2>
+                        <p class="text-slate-300 text-base leading-relaxed">
+                            Il Complesso Monumentale del Belvedere di San Leucio è un sito borbonico nato dal sogno utopico di re Ferdinando IV, celebre per la sua antica manifattura della seta e il suo codice di leggi.
+                        </p>
+                    </div>
+                </div>
 
-
-                <!-- Pulsante "Esplora il Progetto" -->
-                <div class="pt-2">
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-3 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition text-base">
-                        <span>Esplora il Progetto</span>
-                        <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                <!-- Pulsante Scheda 1 -->
+                <div class="pt-2 text-left">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-3 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 text-white font-bold px-6 py-3 rounded-xl shadow-lg transition text-sm">
+                        <span>Esplora San Leucio</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                     </a>
                 </div>
-            </div>
+            </article>
+
+            <!-- SCHEDA 2: Secondo Monumento (es. Reggia di Caserta) -->
+            <article class="bg-slate-900/60 p-6 sm:p-8 rounded-3xl border border-slate-700/50 shadow-2xl backdrop-blur-md flex flex-col justify-between space-y-6">
+                <div class="space-y-6">
+                    <!-- Immagine 2 -->
+                    <div class="relative w-full rounded-2xl overflow-hidden shadow-xl border border-slate-700/60">
+                        <img src="ReggiaCaserta.jpg" alt="Reggia di Caserta" class="w-full h-64 object-cover">
+                    </div>
+
+                    <!-- Titolo e Descrizione 2 -->
+                    <div class="space-y-3 text-left">
+                        <h2 class="text-2xl font-bold text-white">Reggia di Caserta</h2>
+                        <p class="text-slate-300 text-base leading-relaxed">
+                            Progettata da Luigi Vanvitelli, la Reggia di Caserta è la residenza reale più grande al mondo per volume, famosa per i suoi maestosi appartamenti e il parco monumentale con le cascate.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pulsante Scheda 2 -->
+                <div class="pt-2 text-left">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-3 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 text-white font-bold px-6 py-3 rounded-xl shadow-lg transition text-sm">
+                        <span>Esplora la Reggia</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </a>
+                </div>
+            </article>
 
         </div>
     </main>
