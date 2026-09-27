@@ -11,23 +11,25 @@
 </head>
 <body class="relative min-h-screen bg-cover bg-center bg-no-repeat font-sans text-slate-100 flex items-center justify-center p-6"
       style="background-image: url('sfondo.jpg');">
-     </h1>
-        <p class="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
-            Questa pagina è stata creata per essere ospitata gratuitamente su GitHub Pages.
 
     <!-- Layer scuro sopra lo sfondo -->
     <div class="absolute inset-0 bg-slate-950/70 backdrop-blur-sm"></div>
 
-    <!-- Contenuto Principale: espanso per ospitare più schede -->
-    <main class="relative z-10 w-full max-w-6xl space-y-10 my-8">
+    <!-- Contenuto Principale perfettamente centrato al centro dello schermo -->
+    <main class="relative z-10 w-full max-w-6xl space-y-10 my-8 mx-auto text-center">
         
-        <!-- Titolo principale -->
-        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight text-center drop-shadow-md">
-            Cultural Heritage website
-        </h1>
+        <!-- Header con Titolo e Sottotitolo -->
+        <header class="space-y-3">
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight drop-shadow-md">
+                Cultural Heritage website
+            </h1>
+            <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+                Questa pagina è stata creata per essere ospitata gratuitamente su GitHub Pages
+            </p>
+        </header>
 
         <!-- Griglia delle Schede dei Monumenti -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 text-left">
             
             <!-- SCHEDA 1: Belvedere di San Leucio -->
             <article class="bg-slate-900/60 p-6 sm:p-8 rounded-3xl border border-slate-700/50 shadow-2xl backdrop-blur-md flex flex-col justify-between space-y-6">
@@ -38,7 +40,7 @@
                     </div>
 
                     <!-- Titolo e Descrizione 1 -->
-                    <div class="space-y-3 text-left">
+                    <div class="space-y-3">
                         <h2 class="text-2xl font-bold text-white">Belvedere di San Leucio</h2>
                         <p class="text-slate-300 text-base leading-relaxed">
                             Il Complesso Monumentale del Belvedere di San Leucio è un sito borbonico nato dal sogno utopico di re Ferdinando IV, celebre per la sua antica manifattura della seta e il suo codice di leggi.
@@ -47,7 +49,7 @@
                 </div>
 
                 <!-- Pulsante Scheda 1 -->
-                <div class="pt-2 text-left">
+                <div class="pt-2">
                     <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-3 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 text-white font-bold px-6 py-3 rounded-xl shadow-lg transition text-sm">
                         <span>Esplora San Leucio</span>
                         <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
@@ -55,7 +57,7 @@
                 </div>
             </article>
 
-            <!-- SCHEDA 2: Secondo Monumento (es. Reggia di Caserta) -->
+            <!-- SCHEDA 2: Secondo Monumento -->
             <article class="bg-slate-900/60 p-6 sm:p-8 rounded-3xl border border-slate-700/50 shadow-2xl backdrop-blur-md flex flex-col justify-between space-y-6">
                 <div class="space-y-6">
                     <!-- Immagine 2 -->
@@ -64,7 +66,7 @@
                     </div>
 
                     <!-- Titolo e Descrizione 2 -->
-                    <div class="space-y-3 text-left">
+                    <div class="space-y-3">
                         <h2 class="text-2xl font-bold text-white">Reggia di Caserta</h2>
                         <p class="text-slate-300 text-base leading-relaxed">
                             Progettata da Luigi Vanvitelli, la Reggia di Caserta è la residenza reale più grande al mondo per volume, famosa per i suoi maestosi appartamenti e il parco monumentale con le cascate.
@@ -73,7 +75,7 @@
                 </div>
 
                 <!-- Pulsante Scheda 2 -->
-                <div class="pt-2 text-left">
+                <div class="pt-2">
                     <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-3 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 text-white font-bold px-6 py-3 rounded-xl shadow-lg transition text-sm">
                         <span>Esplora la Reggia</span>
                         <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
